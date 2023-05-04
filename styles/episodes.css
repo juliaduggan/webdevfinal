@@ -12,7 +12,7 @@
     padding: 10px;
     border-radius: 50%;
     border: 1px solid #3e4531;
-    background-color: #3e3d45; 
+    background-color: #615f6c; 
     color: #3e3d45;
     font-size: 110%;
     font-weight: bold;
@@ -59,7 +59,7 @@ header img {
     margin: 2vh;
     max-width: 170px !important;
     min-width: 70px !important;
-    width: 100%;
+    width: 100% !important; 
 }
 header, footer {
     width: 100%;
@@ -105,7 +105,6 @@ body {
     padding: 0;
     margin: 0;
   }
-  
   #rightcol li {
     width: calc(33.33% - 20px);
     margin: 10px;
@@ -137,17 +136,25 @@ body {
 h1 {
 	font-size: 32px;
 	margin: 10px;
+    text-align: center;
 }
 h2 {
 	font-size: 24px;
 	margin: 10px;
+    text-align: center;
+}
+h3 {
+    text-align: center;
 }
 h4 {
     font-size: 18px;
     margin: 10px;
+    text-align: center;
 }
 p {
 	margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
 ul {
 	list-style: none;
@@ -194,6 +201,11 @@ section p {
     height: 200px;
     object-fit: cover;
 }
+img {
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
 /*=======================================================
              SLIDE SHOW
 =======================================================*/
@@ -216,10 +228,26 @@ section p {
     border-radius: 5px;
     max-height: 600px;
 }
-.prev, .next {
+#slideshow1 {
+    position: relative;
+}
+#slideshow1 .prev, #slideshow1 .next {
     position: absolute;
     font-size: 150%;
-    color: rgba(102, 51, 153, 0.6);
+    color: #66714f;
+    top: 50%;
+    background-color: rgba(128, 128, 128, 0.35);
+    padding: 2vh;
+    transform: translateY(-50%);
+    transition: all 300ms ease;
+}
+#slideshow2 {
+    position: relative;
+}
+#slideshow2 .prev, #slideshow2 .next {
+    position: absolute;
+    font-size: 150%;
+    color: #66714f;
     top: 50%;
     background-color: rgba(128, 128, 128, 0.35);
     padding: 2vh;
@@ -312,20 +340,26 @@ a {
     display: inline-block;
     padding: 8px 16px;
 }
-  
 a:hover {
     background-color: #ddd;
     color: black;
 }
   
 .previouspage {
-    background-color: #f1f1f1;
-    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #dfdbc3;
+    color: #414048;
+    border: 3px solid #3e3d45;
 }
-  
 .nextpage {
-    background-color: #04AA6D;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #66714f;
     color: white;
+    border: 3px solid #3e3d45;
 }
 /*==================================================
                        FOOTER

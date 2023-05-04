@@ -1,8 +1,8 @@
-function currentYear() {
+//Year in Footer
+window.onload = function () {
     let d = new Date();
     document.getElementById('copyright').innerHTML = d.getFullYear();
 }
-
 // When the user scrolls down 800px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 

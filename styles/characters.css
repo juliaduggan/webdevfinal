@@ -12,7 +12,7 @@
     padding: 10px;
     border-radius: 50%;
     border: 1px solid #3e4531;
-    background-color: #3e3d45; 
+    background-color: #615f6c; 
     color: #3e3d45;
     font-size: 110%;
     font-weight: bold;
@@ -153,9 +153,6 @@ ul {
 	list-style: none;
 	margin-bottom: 10px;
 }
-li {
-	margin-bottom: 5px;
-}
 li a {
 	color: #006cb7;
 	text-decoration: none;
@@ -191,6 +188,7 @@ section p {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    padding: 10px
 }
 
 .character-image {
